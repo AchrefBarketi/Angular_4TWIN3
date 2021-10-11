@@ -1,0 +1,10 @@
+<div class="blocs-ligne" *ngFor="let fournisseur of list">
+    <form *ngIf="(fournisseur.idFournisseur)<=100">
+        <fieldset (dblclick)="Delete(fournisseur)" [style.background-color]="getColor(fournisseur)" >
+            <legend >idFournisseur:{{fournisseur.idFournisseur}}</legend>
+            <label [style.font-weight]="getFont(fournisseur)">Code: {{fournisseur.code}}</label><br>
+            <label>Libelle: {{fournisseur.libelle}}</label>
+        </fieldset>
+        
+    </form>
+</div>

@@ -1,0 +1,12 @@
+.logo{
+    width: 15%;
+    height: 15%;
+}
+
+.container-fluid{
+    align-items: baseline;
+}
+
+#navbarSupportedContent{
+    float: right;
+}
